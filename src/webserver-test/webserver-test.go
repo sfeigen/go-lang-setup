@@ -10,6 +10,16 @@ import (
 	"net/http"
 )
 
+type DF struct {
+	X float32
+	y float32
+}
+
+func (df DF) perceptron() {
+	df.X = 1
+	df.y = 1
+}
+
 //Page data structure
 type Page struct {
 	Title string
