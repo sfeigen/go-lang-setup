@@ -31,6 +31,7 @@ func getJSON() ([]byte, error) {
 	vegetables := make(map[string]int)
 	vegetables["Carrots"] = 4
 	vegetables["Peppers"] = 0
+	vegetables["Cheese"] = 48
 
 	d := Data{fruits, vegetables}
 	p := Payload{d}
