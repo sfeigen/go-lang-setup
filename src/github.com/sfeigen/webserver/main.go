@@ -18,6 +18,7 @@ func main() {
 	http.ListenAndServe(":"+port, nil)
 }
 
+//GenerateMarkdown uses blackfriday to generate markdown
 func GenerateMarkdown(rw http.ResponseWriter, r *http.Request) {
 	markdown := blackfriday.MarkdownCommon([]byte(r.FormValue("body")))
 	rw.Write(markdown)
